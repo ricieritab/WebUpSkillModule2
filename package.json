@@ -1,0 +1,25 @@
+{
+  "name": "webxfunc-tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scripts/main.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest run /tests --passWithNoTests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ricieritab/WebUpSkillModule2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ricieritab/WebUpSkillModule2/issues"
+  },
+  "homepage": "https://github.com/ricieritab/WebUpSkillModule2#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^26.4.2"
+  }
+}

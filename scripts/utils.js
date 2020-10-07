@@ -1,19 +1,19 @@
 // utils.js
 
-function $(id) {
+const elementById = (id) => {
     return document.getElementById(id);
 }
 
-function elementsByClassName(className) {
+const elementsByClassName = (className) => {
     return document.querySelectorAll(`.${className}`);
 }
 
-if (window.NodeList && !NodeList.prototype.filter) {
-    NodeList.prototype.filter = Array.prototype.filter;
+const addFilterToNodeList = () => {
+    if (window.NodeList && !NodeList.prototype.filter) {
+        NodeList.prototype.filter = Array.prototype.filter;
+    }
 }
 
-function arrayEquals(a, b) {
-    return Array.isArray(a) && Array.isArray(b) &&
-        a.length === b.length &&
-        a.every((val, index) => val === b[index]);
-}
+module.exports = {
+    elementById, elementsByClassName, addFilterToNodeList
+};
