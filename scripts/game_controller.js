@@ -17,16 +17,8 @@ const nextPlayer = () => {
     const firstPlayerNumberOfPlays = firstPlayerGame.length;
     const secondPlayerNumberOfPlays = secondPlayerGame.length;
 
-    const didPlayFirstPlayer = firstPlayerGame.length > 0;
-    const didPlaySecondPlayer = secondPlayerGame.length > 0;
-    
-    const isNewGame = !didPlayFirstPlayer && !didPlaySecondPlayer;
-    if (isNewGame) {
-        return {'NEXT_PLAYER': PLAYER_1};
-    }
-
-    return firstPlayerNumberOfPlays < secondPlayerNumberOfPlays 
-        ? {'NEXT_PLAYER': PLAYER_1} : {'NEXT_PLAYER': PLAYER_2};
+    const nextPlayerToPlay = ((firstPlayerGame.length + secondPlayerGame.length) % 2) === 0 ? PLAYER_1 : PLAYER_2;
+    return {'NEXT_PLAYER': nextPlayerToPlay};
 }
 
 const playIfFree = (player, position) => {
