@@ -1,6 +1,6 @@
 // game.js
 
-const { PLAYER_1, PLAYER_2 } = require("./players");
+const { PLAYER_1, PLAYER_2 } = require("./const/players");
 
 const VALID_COMBINATIONS = [
     [1, 2, 3],

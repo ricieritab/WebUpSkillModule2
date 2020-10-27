@@ -5,7 +5,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "jest run /tests --passWithNoTests"
+    "test": "jest run /tests --passWithNoTests",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,9 @@
     "url": "https://github.com/ricieritab/WebUpSkillModule2/issues"
   },
   "homepage": "https://github.com/ricieritab/WebUpSkillModule2#readme",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.17.20"
+  },
   "devDependencies": {
     "jest": "^26.4.2",
     "webpack": "^5.3.0",

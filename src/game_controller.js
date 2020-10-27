@@ -1,7 +1,7 @@
 // game_controller.js
 
 const { getPlayerGame, isPositionFree, getGame, playerDidPlay } = require('./game.js');
-const { PLAYER_1, PLAYER_2 } = require('./players.js');
+const { PLAYER_1, PLAYER_2 } = require('./const/players.js');
 
 function play(player, position) {
     playerDidPlay(player, position);

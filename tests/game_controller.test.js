@@ -1,8 +1,8 @@
 // game_controller.js
 
-const { PLAYER_1, PLAYER_2 } = require("../scripts/players");
-const { newGame } = require("../scripts/game");
-const { nextPlayer, playIfFree } = require("../scripts/game_controller");
+const { PLAYER_1, PLAYER_2 } = require("../src/const/players");
+const { newGame } = require("../src/game");
+const { nextPlayer, playIfFree } = require("../src/game_controller");
 
 // test nextPlayer()
 

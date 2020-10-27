@@ -1,27 +1,13 @@
 // game.js (test)
 
-const { 
-    getGame, 
-    newGame,
-    isPlayerValid,
-    getPlayerGame,
-    numberOfPlays,
-    playerDidPlay,
-    isPositionFree,
-    totalOfPlays,
-    didGameEnd,
-    evaluatePlayerGame,
-    evaluateGameForWinners,
-    evaluateGameForWinnersIfNeeded
-} = require("../scripts/game");
-
-const { PLAYER_1, PLAYER_2 } = require("../scripts/players");
+const { getGame, newGame, isPlayerValid, getPlayerGame, numberOfPlays, playerDidPlay, isPositionFree, totalOfPlays, didGameEnd, evaluatePlayerGame, evaluateGameForWinners, evaluateGameForWinnersIfNeeded } = require('../src/game');
+const { PLAYER_1, PLAYER_2 } = require('../src/const/players');
 
 const NEW_GAME = {
     firstPlayerGame: [],
     secondPlayerGame: [],
     isGameOver: false,
-}
+};
 
 // test getGame()
 
