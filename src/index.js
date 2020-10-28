@@ -1,8 +1,8 @@
 // main.js
 
-const { elementById, elementsByClassName, addFilterToNodeList } = require('./utils');
-const { newGame } = require('./game');
-const { nextPlayer, playIfFree } = require('./game_controller');
+const { elementById, elementsByClassName, addFilterToNodeList } = require('./const/utils.js');
+const { newGame } = require('./game.js');
+const { nextPlayer, playIfFree } = require('./game_controller.js');
 
 function main() {
 
